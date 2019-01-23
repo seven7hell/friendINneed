@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>friend IN need | Home</title>
+	<link rel="icon" href="media/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/extra.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-dark navbar-expand-sm p-5">
+		<a href="javascript:void(0)" class="navbar-brand">
+			<img src="media/icon.png" class="logo pulse animated">
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item mr-md-2">
+				<a href="pages/learn.html" class="nav-link text-uppercase">Learn</a>
+			</li>
+			<li class="nav-item mr-md-2">
+				<a href="pages/donate.html" class="nav-link text-uppercase">Donate</a>
+			</li>
+			<li class="nav-item mr-md-2">
+				<a href="pages/request.html" class="nav-link text-uppercase">Request</a>
+			</li>
+			<li class="nav-item mr-md-2">
+				<a href="pages/gallery.html" class="nav-link text-uppercase">Gallery</a>
+			</li>
+			<li class="nav-item mr-md-2">
+				<a href="#clogin" class="nav-link text-uppercase" data-toggle="modal" data-backdrop="static"><i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="modal fade" id="clogin">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title font-weight-bold">Hospital & Blood Bank Login</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<form method="post" action="#">
+					<div class="modal-body">
+							<img src="media/icon.png" class="mx-auto d-block logo mb-3">
+							<div class="form-group">
+								<div class="row">
+									<div class="col-2 offset-2">
+										<label for="user" class="mt-2"><i class="fas fa-user fa-lg"></i></label>
+									</div>
+									<div class="col-6">
+										<input type="text" class="form-control"  name="user" id="user" placeholder="Username">
+									</div>
+								</div>
+							</div>	
+							<div class="form-group">
+								<div class="row">
+									<div class="col-2 offset-2">
+										<label for="pass" class="mt-2"><i class="fas fa-lock fa-lg"></i></label>
+									</div>
+									<div class="col-6">
+										<input type="password" class="form-control"  name="pass" id="pass" placeholder="Password">
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<span>Forgot Password ? Write a <a href="javascript:void(0)" class="red-text">mail</a> to us.</span>
+							</div>
+					</div>
+					<div class="modal-footer justify-content-center">
+						<button type="button" class="btn class-btn mr-2" onclick="location.href = 'pages/centre.html';">Login</button>
+						<button type="button" class="btn btn-secondary ml-2" data-dismiss="modal">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="topBar">
+		<a href="javascript:void(0)"><img src="media/icon.png" class="logo pulse animated"></a>
+		<span class="hamburger float-right" onclick="openNav()">&#9776;</span>
+	</div>
+
+	<div class="sideNavMenu" id="sideNav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="pages/learn.html" class="text-uppercase">Learn</a>
+	  <a href="pages/donate.html" class="text-uppercase">Donate</a>	  
+	  <a href="pages/request.html" class="text-uppercase">Request</a>
+	  <a href="pages/gallery.html" class="text-uppercase">Gallery</a>
+	  <a href="#clogin" class="text-uppercase" data-toggle="modal" data-backdrop="static"><i class="fas fa-sign-in-alt"></i> Login</a>
+	</div>
+
+
+	<a href="#" id="scroll"><span></span></a>
+
+	<div class="banner">
+		<img src="media/home-cover.png" class="mw-100 banner-image" id="large-banner">
+		<img src="media/home-cover-small.png" class="mw-100 banner-image" id="small-banner" hidden>
+		<div class="banner-content">
+			<h1 class="text-uppercase mt-5 font-weight-bold title">Friend In Need</h1>
+			<h6>Your one hour of time and one bag of blood can save three precious lives.</h6>
+		</div>
+	</div>
+
+	<div class="mx-auto text-center">
+		<a href="pages/donate.html" class="class-button text-uppercase">Join Us</a>
+	</div>
+
+	<div class="container mt-10">
+		<div class="row">
+			<div class="col-sm-6 d-flex align-items-center">
+				<img src="media/blood.png" class="img-fluid mx-auto d-none d-sm-block">
+			</div>
+			<div class="col-sm-6 col-12">
+				<div class="row">
+					<div class="col-12 text-center">
+						<a href="pages/learn.html">
+							<img src="media/learn.png" class="sticker">
+							<h3 class="text-uppercase red-text mt-2">Learn</h3>
+						</a>
+						<p>Discover how blood donation works and who it helps</p>
+					</div>
+					<div class="col-12 text-center">
+						<a href="pages/donate.html">
+							<img src="media/donate.png" class="sticker">
+							<h3 class="text-uppercase red-text mt-2">Donate</h3>
+						</a>
+						<p>Register yourself for blood donation</p>
+					</div>
+					<div class="col-12 text-center">
+						<a href="pages/request.html">
+							<img src="media/request.png" class="sticker">
+							<h3 class="text-uppercase red-text mt-2">Request</h3>
+						</a>
+						<p>Request donors for blood donation</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid p-5 mt-5 bg-custom">
+		<div class="p-4">
+			<h2 class="red-text text-center text-uppercase font-weight-bold">All the lives we've touched</h2>
+			<p class="text-center">Little efforts make big difference,be a part of it and help someone to save their precious ones.</p>
+		</div>
+		<div class="container">
+			<div class="row mt-3">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-12 text-center">
+							<i class="fas fa-5x fa-child"></i>
+							<h5 class="text-uppercase mt-2">Donors</h5>
+							<p class="count-data red-text font-weight-bold">165</p>
+						</div>
+						<div class="col-12 text-center">
+							<i class="fas fa-5x fa-tint"></i>
+							<h5 class="text-uppercase mt-2">Blood bags</h5>
+							<p class="count-data red-text font-weight-bold">209</p>
+						</div>
+						<div class="col-12 text-center mx-auto d-block">
+							<i class="fas fa-5x fa-heartbeat"></i>
+							<h5 class="text-uppercase mt-2">Helped lives</h5>
+							<p class="count-data red-text font-weight-bold">147</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 d-flex align-items-center">
+					<img src="media/bloodhand.png" class="img-fluid h-400 mx-auto d-none d-sm-block">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-dark text-white">
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-sm-7">
+					<h4 class="text-uppercase">About Us</h4>
+					<hr class="border-white">
+					<p><strong class="red-text">FRIENDINNEED</strong> is an idea to help the people in the need of blood. Ensuring the safety and availability of blood is an essential public health responsibility. So, we are taking this responsibility with seriousness. We understand the value of lives that's why, our moto is "Save many lives as much we can".</p>
+				</div>
+				<div class="col-sm-4 offset-sm-1">
+					<h4 class="text-uppercase">Contact Us</h4>
+					<hr class="border-white">
+					<p><i class="fas fa-map-marker-alt mr-2 mr-lg-4"></i> Bharthi Salai, Chennai</p>
+					<p><i class="fas fa-phone mr-2 mr-lg-4"></i> +91 (044) 456 7890</p>
+					<p><i class="fas fa-envelope mr-2 mr-lg-4"></i> info@friendinneed.co</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<a href="#"><i class="fab fa-facebook-f fa-2x m-4 social-tag"></i></a>
+					<a href="#"><i class="fab fa-twitter fa-2x m-4 social-tag"></i></a>
+					<a href="#"><i class="fab fa-google-plus fa-2x m-4 social-tag"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center">
+					<p>Made with <i class="fas fa-heart red-text"></i> in India <br> ( <i class="fas fa-code"></i> By <a href="https://seven7hell.github.io/portfolio/" target="_blank" class="red-text">Utkarsh Soni</a> )</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="infoModal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-body">
+					<i class="fas fa-info-circle fa-3x faa-tada animated mx-auto d-block"></i><br>
+					<h3 class="red-text text-center">Disclaimer</h3>
+					<p class="text-center">This web application is for demonstration purposes only.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn class-btn" data-dismiss="modal">OK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="js/additional.js"></script>
+	<script>
+	    $(window).on('load',function(){
+	        $('#infoModal').modal();
+	    });
+	</script>
+	<script>
+	$(document).ready(function(){
+	   if (window.matchMedia("(max-width: 700px)").matches) {
+        	document.getElementById("large-banner").hidden=true;
+        	document.getElementById("small-banner").hidden=false;
+	    }
+	});
+	</script>
+	<script>
+	
+</script>
+
+</body>
+</html>
